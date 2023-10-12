@@ -1,0 +1,52 @@
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 50px ;
+
+}
+.container{
+    border-bottom: 1px solid;
+    color: black;
+    
+}
+.logo-container {
+    font-family: 'Raleway', sans-serif;
+    
+}
+
+.logo-text {
+    font-size: 40px;
+    
+}
+
+.nav-menu {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    list-style: none;
+    
+    
+}
+.nav-menu-container {
+    display: flex;
+    place-items: center;
+    
+}
+
+.nav-menu li{
+    display: inline;
+    margin: 30px;
+    
+    
+}
+.nav-container a {
+    text-decoration: none;
+    color: black;
+
+}
+
+.contact-container {
+    display: flex;
+    place-items: center;
+    font-weight: 600;
+}
+
