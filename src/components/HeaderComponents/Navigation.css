@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     margin: 15px 50px ;
-
+z-index: 5;
 }
 .container{
     border-bottom: 1px solid;
@@ -33,16 +33,28 @@
 }
 
 .nav-menu li{
+    z-index: 4;
     display: inline;
-    margin: 30px;
-    
+  margin: 30px;
+  transition: border 0.3s; /* Добавляем плавный переход для рамки */
+  padding: 5px 15px;
+  border: 1px solid transparent; /* Устанавливаем нулевую рамку по умолчанию */
+  border-radius: 15px; /* Добавляем закругления */
     
 }
+.nav-menu li:hover {
+    border: 1px solid black; /* Устанавливаем рамку при наведении */
+  }
+
+
 .nav-container a {
     text-decoration: none;
     color: black;
 
 }
+
+
+
 
 .contact-container {
     display: flex;

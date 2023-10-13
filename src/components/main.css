@@ -6,7 +6,7 @@
     flex: 1;
     height: 400px;
     overflow: hidden;
-   
+    overflow: hidden;
     
 }
 
@@ -86,17 +86,27 @@ z-index: 2;
     font-size: 200px;
     filter: blur(15px);
     font-weight: 200;
+    line-height: 0.8;
 }
 
 .blur-section-right{
+    
     top: 0;
     right:  0px;
+    
     position: absolute;
     font-family: 'Roboto', sans-serif;
     font-size: 200px;
     filter: blur(15px);
     font-weight: 200;
-    overflow: hidden;
+  
+}
+
+.blur-section-right p{
+    height: 400px;
+    margin: 0;
+    position: relative;
+    top: 100px;
 }
 
 
@@ -203,7 +213,99 @@ z-index: 2;
     position: relative;
 }
 
-
 .expertise-container{
-    height: 100px;
+    position: relative;
 }
+ .expertise-name{
+    
+    justify-content: center;
+    display: flex;
+    place-items: center;
+    font-family: 'Roboto', sans-serif;
+    height: 200px;
+    font-size: 20px;
+    margin: 0;
+
+}
+.expertise-container .expertise-ul{
+    gap: 30px;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    place-items: center;
+    font-family: 'Roboto', sans-serif;
+    height: 100px;
+    font-size: 50px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.expertise-ul li {
+    position: relative;
+    list-style: none;
+    padding: 10px 0;
+    color: #84848484;
+    text-align: center;
+  }
+
+  .expertise-ul li:hover{
+    color: #000;
+    
+  }
+  .expertise-ul li::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid black;
+    background-color: transparent;
+    border-radius: 50%;
+    position: absolute;
+    top: 30px;
+    left: -50px;
+    transition: background-color 0.3s ease; /* Плавное изменение цвета */
+  }
+  .expertise-ul li:hover::before {
+    background-color: #000; /* Установите желаемый цвет при наведении */
+    
+  }
+
+  .dujki {
+    font-weight: 400;
+    font-size: 20px;
+    top: 0;
+    position: absolute;
+  }
+
+.img-container-expertise{
+    
+   height: 100%;
+   width: 100%;
+
+   margin-right: auto;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    overflow: hidden;
+    top: 1100px;
+}
+  .img-container-left-one{
+    position: relative;
+    background-size: contain ;
+    background-repeat: no-repeat;
+    transform: rotate(345deg);
+   
+    width: 412px;
+    height: 536px;
+     background: url('../../public/img/4.png');
+  }
+  .img-container-right-two{
+    position: relative;
+    background-size: contain ;
+    background-repeat: no-repeat;
+    transform: rotate(15deg);
+    width: 410px;
+    
+    height: 536px;
+     background: url('../../public/img/5.png');
+  }
